@@ -1,0 +1,10 @@
+.searchLabel{
+  margin: 15px 0;
+
+}
+.searchInput{
+  box-shadow: 2px 2px 2px 2px #888888;
+  border-style: solid;
+  border-color: cadetblue;
+  border-width: 1px;
+}

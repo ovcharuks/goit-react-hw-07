@@ -1,0 +1,14 @@
+.contactForm {
+display: flex;
+flex-direction: column;
+gap: 5px;
+border-style: solid;
+border-color: cadetblue;
+border-width: 1px;
+padding: 3px;
+box-shadow: 2px 2px 2px 2px #888888;
+}
+.error{
+ color: red;
+
+}
