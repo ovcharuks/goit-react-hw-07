@@ -4,13 +4,19 @@ import * as Yup from "yup";
 import { ErrorMessage, Formik, Form, Field } from "formik";
 import { useDispatch } from "react-redux";
 import { addContact } from "../../redux/contactsSlice";
+import { addContactThunk } from "../../redux/operations";
 
 const ContactForm = () => {
   const dispatch = useDispatch();
   const handleSubmit = (value) => {
-    dispatch(addContact({ ...value, id: nanoid() }));
-
-    actions.resetForm();
+    dispatch(
+      addContactThunk({
+        ...value,
+        // id: nanoid(),
+      })
+    );
+    console.log(value);
+    // actions.resetForm();
   };
 
   const registerSchema = Yup.object().shape({
