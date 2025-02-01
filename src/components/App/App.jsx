@@ -9,7 +9,7 @@ import {
   selectFilter,
   selectIsError,
   selectIsloading,
-} from "../../redux/contactsSlice";
+} from "../../redux/selectors";
 
 function App() {
   const dispatch = useDispatch();

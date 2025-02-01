@@ -1,7 +1,5 @@
 import axios from "axios";
-import { fetchDataSuccess, setError, setLoading } from "./contactsSlice";
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { ErrorMessage } from "formik";
 axios.defaults.baseURL = "https://679737b3c2c861de0c6be408.mockapi.io";
 
 // export const fetchContacts = () => async (dispatch) => {
