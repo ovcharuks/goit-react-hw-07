@@ -4,7 +4,7 @@ import * as Yup from "yup";
 import { ErrorMessage, Formik, Form, Field } from "formik";
 import { useDispatch } from "react-redux";
 import { addContact } from "../../redux/contactsSlice";
-import { addContactThunk } from "../../redux/operations";
+import { addContactThunk } from "../../redux/contactsOps";
 
 const ContactForm = () => {
   const dispatch = useDispatch();
