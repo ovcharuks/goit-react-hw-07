@@ -5,23 +5,19 @@ import { selectContacts, selectFilter } from "./selectors";
 const contactsSlice = createSlice({
   name: "contacts",
   initialState: {
-    items: [
-      { id: "id", name: "name", number: "number" },
-      { id: "id1", name: "name1", number: "number1" },
-      { id: "id2", name: "name2", number: "number2" },
-    ],
+    items: [],
     isLoading: false,
     isError: null,
   },
   reducers: {
-    addContact: (state, action) => {
-      state.items.push(action.payload);
-    },
-    deleteContact: (state, action) => {
-      state.items = state.items.filter(
-        (contact) => contact.id !== action.payload
-      );
-    },
+    // addContact: (state, action) => {
+    //   state.items.push(action.payload);
+    // },
+    // deleteContact: (state, action) => {
+    //   state.items = state.items.filter(
+    //     (contact) => contact.id !== action.payload
+    //   );
+    // },
     setLoading: (state, action) => {
       state.isLoading = action.payload;
     },
